@@ -3,116 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página web moderna</title>
+    <title>GreatDevs</title>
     <!-- Asegúrate de incluir Tailwind en tu proyecto -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Header -->
     <header class="bg-gray-800 text-white py-6 px-4">
         <div class="max-w-6xl mx-auto">
-            <h1 class="text-2xl font-bold mb-2">Logo</h1>
+            <h1 class="text-2xl font-bold mb-2">GreatDevs</h1>
             <p class="text-xl">Desarrollando sistemas que encajan perfectamente contigo.</p>
         </div>
     </header>
 
     <!-- Barra de navegación -->
     <nav class="bg-gray-900 text-white py-4 px-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="#" class="hover:text-blue-400">Inicio</a>
-            <a href="#" class="hover:text-blue-400">Productos</a>
-            <a href="#" class="hover:text-blue-400">Equipo</a>
-            <a href="#" class="hover:text-blue-400">Contacto</a>
+        <div class="max-w-6xl mx-auto flex justify-evenly items-center">
+            <a href="#products" class="hover:text-blue-400">Productos</a>
+            <a href="#team" class="hover:text-blue-400">Equipo</a>
         </div>
     </nav>
 
-    <!-- Sección hero -->
-    <section class="bg-gray-900 py-16 px-4">
-        <div class="max-w-6xl mx-auto flex items-center">
-            <div class="w-full md:w-1/2 text-white">
-                <h2>Nuestro servicio</h2>
-                <p>Desarrollamos soluciones innovadoras para tus necesidades</p>
-            </div>
-            <div class="w-full md:w-1/2 mt-8 md:mt-0">
-                <img src="https://picsum.photos/600/400" alt="Hero">
-            </div>
-        </div>
-    </section>
-
     <!-- Tarjetas de productos -->
-    <section class="py-12 px-4">
+    <section class="py-12 px-4" id="products">
         <div class="max-w-6xl mx-auto">
             <h2>Nuestros productos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                 <!-- Productos -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <h3>Producto 1</h3>
-                    <p>Descripción del producto 1</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-2">
+                    <h3><a href="https://d.petwatcher.app" target="_blank" class="italic underline">PetWatcher</a></h3>
+                    <p>Sistema de seguimiento médico para mascotas</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <h3>Producto 2</h3>
-                    <p>Descripción del producto 2</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow space-y-2">
+                    <h3>CharlyTeamCoachApp</h3>
+                    <p>Sistema de seguimiento para pacientes del equipo <a href="https://charlyteam.com.mx/" class="italic underline" target="_blank">#CharlyTeam</a></p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <h3>Producto 3</h3>
-                    <p>Descripción del producto 3</p>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Sección del equipo -->
-    <section class="py-12 px-4 bg-gray-50">
+    <section class="py-12 px-4 bg-gray-50" id="team">
         <div class="max-w-6xl mx-auto">
             <h2>El equipo de trabajo</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">
                 <!-- Equipo -->
-                <div class="text-center p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/300x300" alt="Equipo">
-                    <h3>Nombre del equipo</h3>
-                    <p>Rol o función del equipo</p>
+                <div class="text-center p-6 shadow-md flex items-center justify-center flex-col">
+                    <img class="rounded" src="https://avatars.githubusercontent.com/u/63815702?v=4" alt="Manuel Carbajal Picture" width="200" height="200">
+                    <h3>Manuel Carbajal</h3>
+                    <p>Desarrollador - Tech</p>
                 </div>
 
-                <div class="text-center p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/300x300" alt="Equipo">
-                    <h3>Nombre del equipo</h3>
-                    <p>Rol o función del equipo</p>
-                </div>
-
-                <div class="text-center p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/300x300" alt="Equipo">
-                    <h3>Nombre del equipo</h3>
-                    <p>Rol o función del equipo</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Formulario de contacto -->
-    <section class="py-12 px-4 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2>Contáctanos</h2>
-            <form class="max-w-lg mx-auto mt-8">
-                <div class="mb-4">
-                    <input type="text" placeholder="Nombre" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-400">
-                </div>
-                <div class="mb-4">
-                    <input type="email" placeholder="Correo electrónico" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-400">
-                </div>
-                <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
-                    Enviar mensaje
-                </button>
-            </form>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 px-4">
         <div class="max-w-6xl mx-auto text-center">
-            <p>&copy; 2024 Todos los derechos reservados</p>
-            <a href="#" class="ml-4 hover:text-blue-400">Visita nuestra web</a>
+            <p>GreatDevs&copy; 2025</p>
+            <p class="ml-4">Todos los derechos reservados</p>
         </div>
     </footer>
 </body>
